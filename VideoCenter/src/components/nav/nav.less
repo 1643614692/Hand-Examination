@@ -1,0 +1,88 @@
+.nav {
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  .logo {
+    width: 179px;
+    height: 54px;
+    background: url(../../assets/logo.png) no-repeat;
+    background-size: cover;
+  }
+  .title {
+    display: flex;
+  }
+  .menu ul {
+    display: flex;
+    a {
+      font-size: 14px;
+      color: #4d4d4d;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      height: 54px;
+      text-align: center;
+      &:not(.firstnav) {
+        &:after {
+          content: "";
+          display: block;
+          width: 12px;
+          height: 12px;
+          margin-left: 4px;
+          background: url(../../assets/展开.svg) no-repeat;
+        }
+      }
+    }
+  }
+  .user {
+    width: 325px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    div {
+      margin-left: 24px;
+    }
+    .search {
+      width: 20px;
+      height: 20px;
+      background: url(../../assets/Group_10.svg) no-repeat;
+    }
+    .note {
+      width: 20px;
+      height: 20px;
+      background: url(../../assets/通知.svg) no-repeat;
+      position: relative;
+      &:after {
+        content: "99+";
+        display: block;
+        position: absolute;
+        right: -15px;
+        font-size: 10px;
+        width: 19px;
+        height: 10px;
+        background-color: #ff6734;
+        line-height: 10px;
+        color: #fff;
+      }
+    }
+    .headPortrait {
+      width: 30px;
+      height: 30px;
+      background: url(../../assets/头像.svg) no-repeat;
+    }
+    .username {
+      margin-left: 0;
+      display: flex;
+      font-size: 14px;
+      &:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 20px;
+        margin-left: 4px;
+        background: url(../../assets/展开.svg) no-repeat;
+      }
+    }
+  }
+}

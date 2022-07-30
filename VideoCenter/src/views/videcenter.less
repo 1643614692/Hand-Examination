@@ -1,0 +1,97 @@
+.Layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: #4d4d4d;
+  background-color: #fafafa;
+  .main {
+    width: 1152px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    .default {
+      display: flex;
+      .asidenav {
+        width: 220px;
+        overflow: hidden;
+        margin-right: 12px;
+        .ant-menu-item-selected {
+          background-color: #fff9f0;
+          color: #ff8a2b;
+        }
+        .ant-menu-item::after {
+          border-color: #ff8a2b;
+          left: 0;
+          right: auto;
+        }
+        .ant-menu-item-active {
+          color: #ff8a2b;
+        }
+      }
+      .content {
+        width: 920px;
+        .tabs {
+          height: 48px;
+          display: flex;
+          padding: 14px 16px;
+          width: 920px;
+          margin-bottom: 16px;
+          background-color: #fff;
+          > div {
+            height: 26px;
+            margin-right: 24px;
+            font-size: 14px;
+            line-height: 26px;
+            padding: 0 8px;
+            transition: 0.2s;
+            &:not(.firsttab) {
+              cursor: pointer;
+            }
+          }
+          .firsttab {
+            color: #666666;
+            margin-right: 40px;
+          }
+          .tab0 {
+            background: #fff3e9;
+            color: #ff8a2b;
+          }
+        }
+        .video {
+          display: flex;
+          flex-wrap: wrap;
+          > div:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+        .ant-pagination {
+          width: auto;
+          float: right;
+          .ant-pagination-options {
+            display: none;
+          }
+        }
+      }
+    }
+    .searchresult {
+      .searchcount {
+        height: 48px;
+        margin-bottom: 16px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #666666;
+        line-height: 48px;
+        padding-left: 12px;
+        box-sizing: border-box;
+        i {
+          color: #ee6723;
+        }
+      }
+      .ant-pagination {
+        width: auto;
+        float: right;
+        .ant-pagination-options {
+          display: none;
+        }
+      }
+    }
+  }
+}
